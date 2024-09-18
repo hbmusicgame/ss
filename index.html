@@ -5,44 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SyntheticSense</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <style>
-        body {
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            background-color: #dcdcdc;
-            color: #000000;
-            font-family: Arial, sans-serif;
-            height: 100vh;
-            overflow: hidden;
-        }
-        footer {
-            width: 100%;
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            position: relative;
-        }
-        iframe {
-            border: none;
-            width: 72%;
-            height: auto;
-            aspect-ratio: 16 / 9;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="/images/sslogo.png" alt="SyntheticSense">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="flex-main">
+            <!-- <div class="flyer">
+                <img src="/images/ss4_fix__1.png" alt="SyntheticSense vol.4">
+            </div> -->
+            <div class="center">
+                <div class="twitch">
+                    <script>
+                        var hostname = window.location.hostname;
+                        var iframe = document.createElement('iframe');
+                        iframe.src = `https://player.twitch.tv/?channel=syntheticsense&parent=${hostname}`;
+                        iframe.allowFullscreen = true;
+                        document.querySelector('.twitch').appendChild(iframe);
+                    </script>
+                </div>
+                <!-- <div class="links">
+                    <br><br>
+                    join
+                    <br><br>
+                </div> -->
+            </div>
+        </div>
+    </main>
     <footer>
-        <script>
-            var hostname = window.location.hostname;
-            var iframe = document.createElement('iframe');
-            iframe.src = `https://player.twitch.tv/?channel=syntheticsense&parent=${hostname}`;
-            iframe.allowFullscreen = true;
-            document.querySelector('footer').appendChild(iframe);
-        </script>
+        SyntheticSense is a crossover VRDJ event with a focus on Internet music.
     </footer>
-    
 </body>
 </html>
