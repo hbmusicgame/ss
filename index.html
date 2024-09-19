@@ -22,24 +22,21 @@
             </div> -->
             <div class="center">
                 <div class="twitch">
-                    <script>
-                        var hostname = window.location.hostname;
-                        var iframe = document.createElement('iframe');
-                        iframe.src = `https://player.twitch.tv/?channel=syntheticsense&parent=${hostname}`;
-                        iframe.allowFullscreen = true;
-                        document.querySelector('.twitch').appendChild(iframe);
-                    </script>
+                    <script src="twitch.js"></script>                    
                 </div>
-                <!-- <div class="links">
-                    <br><br>
-                    join
-                    <br><br>
-                </div> -->
+
+                <div class="button">
+                    <br>
+                    <button class="styled" type="button" onclick="window.open('https://sugared-pigment-d10.notion.site/How-to-Join-3b8d6589f8c8482782bcaa3ef53be268?pvs=4')">
+                        Join
+                    </button>
+                </div>
             </div>
         </div>
     </main>
     <footer>
-        SyntheticSense is a crossover VRDJ event with a focus on Internet music.
+        Crossover VRDJ event<br>
+        with a focus on Internet music
     </footer>
 </body>
 </html>

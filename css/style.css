@@ -46,7 +46,7 @@ gap: 20px;
 }
 iframe {            
     /*border: none;*/
-    width: 80%; /*動画のサイズ*/
+    width: 70%; /*動画のサイズ フライヤー無い時は下げる*/
     /*height: auto;*/
     aspect-ratio: 16 / 9;
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
@@ -56,10 +56,49 @@ iframe {
 img {
     width: 100%;
 }
+
+.button {
+    text-align: center;
+    
+}
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 140px;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(108, 145, 210, 1);
+    background-image: linear-gradient(
+      to top left,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 30%,
+      rgba(0, 0, 0, 0)
+    );
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+  .styled:hover {
+    background-color: rgba(108, 145, 210, 0.665);
+  }
+  
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+
 footer{
     text-align: center;
     margin: 1em 0em 0.5em 0em;
     user-select: none;
+    color: rgba(69, 96, 23, 0.88);
 }
 
 
@@ -68,15 +107,20 @@ footer{
         width: 80%;
     }
     .flex-main {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 5vw;
+        margin: 0 2vw;
     }
     .flyer {
         width: 100%;
+        transform: scale(1);
         margin: 0em 1em 0em 1em;
     }
     .center {
         width: 100%;
         margin: 0em 6em 0em 6em;
+    }
+    iframe{
+        width: 100%; /*動画のサイズ*/
     }
 }
