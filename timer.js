@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     // 指定日付を設定
-    const targetDate = '2025/02/21';
+    const targetDate = '2025/03/28';
     // 指定日時のタイムスタンプを作成
-    const targetTime = new Date(`${targetDate} 19:00:00`).getTime();
+    const targetTime = new Date(`${targetDate} 20:00:00`).getTime();
 
     // 現在のタイムスタンプを取得
     const currentTime = new Date().getTime();
